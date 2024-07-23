@@ -1,0 +1,12 @@
+<h2>Verify your phone number</h2>
+
+<%= form_with url: otp_verifications_path, method: :post do |form| %>
+  <%= hidden_field_tag :user_id, @user.id %>
+  <div class="field">
+    <%= form.label :otp_code, 'Enter OTP Code' %>
+    <%= form.text_field :otp_code %>
+  </div>
+  <div class="actions">
+    <%= form.submit 'Verify' %>
+  </div>
+<% end %>

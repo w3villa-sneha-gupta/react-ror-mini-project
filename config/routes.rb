@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
-  devise_for :users
+
+  # Define your success path route
+  get 'success', to: 'home#success'
+ 
+  # config/routes.rb
+  devise_for :users, controllers: { registrations: 'users/registrations' }
+  resources :otp_verifications, only: [:new, :create]
   root 'home#index'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 

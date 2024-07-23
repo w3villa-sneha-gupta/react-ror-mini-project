@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  otp_code: MyString
+  expires_at: 2024-07-22 18:14:13
+  verified: false
+
+two:
+  user: two
+  otp_code: MyString
+  expires_at: 2024-07-22 18:14:13
+  verified: false
