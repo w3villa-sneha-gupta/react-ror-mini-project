@@ -16,6 +16,8 @@ gem "puma", ">= 5.0"
 
 gem 'letter_opener'
 
+gem 'webpacker', '~> 5.4'
+
 gem 'rotp'
 gem 'twilio-ruby'
 
