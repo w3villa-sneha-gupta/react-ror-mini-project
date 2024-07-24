@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   get 'success', to: 'home#success'
  
   # config/routes.rb
-  devise_for :users, controllers: { registrations: 'users/registrations' }
+  devise_for :users, controllers: { registrations: 'users/registrations', omniauth_callbacks: 'users/omniauth_callbacks' }
   resources :otp_verifications, only: [:new, :create]
   root 'home#index'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
